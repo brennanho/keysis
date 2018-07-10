@@ -1,0 +1,10 @@
+1. Default LED settings path
+./Nordic-Thingy52-FW/include/ble_services/ble_uis.h
+
+2. Change default LED settings (currently set to breathe)
+/home/brennan/Projects/Projects/Thingy52_SDK/Nordic-Thingy52-FW/include/modules/m_ui.h
+
+3. Disabling services found in...
+/home/brennan/Projects/Projects/Thingy52_SDK/Nordic-Thingy52-FW/source/modules/m_ble.c
+/home/brennan/Projects/Projects/Thingy52_SDK/Nordic-Thingy52-FW/project/pca20020_s132/main.c
+

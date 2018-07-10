@@ -1,0 +1,43 @@
+Nordic-Thingy52-FW/source/modules/m_ui.c:    sx1509_cfg.p_twi_instance = p_params->p_twi_instance;
+Nordic-Thingy52-FW/source/modules/m_environment.c:    err_code = pressure_sensor_init(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/modules/m_environment.c:    err_code = humidity_sensor_init(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/modules/m_environment.c:    err_code = gas_sensor_init(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/modules/m_environment.c:    err_code = color_sensor_init(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/modules/m_ble.c:    m_evt_handler     = p_params->evt_handler;
+Nordic-Thingy52-FW/source/modules/m_ble.c:    m_service_handles = p_params->p_service_handles;
+Nordic-Thingy52-FW/source/modules/m_ble.c:    m_service_num     = p_params->service_num;
+Nordic-Thingy52-FW/source/modules/m_motion.c:    motion_params_mpu9250.p_twi_instance = p_params->p_twi_instance;
+Nordic-Thingy52-FW/source/modules/m_motion.c:    motion_params_lis2dh12.p_twi_instance = p_params->p_twi_instance;
+Binary file Nordic-Thingy52-FW/source/modules/.m_motion.c.swp matches
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    NULL_PARAM_CHECK(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    NULL_PARAM_CHECK(p_params->p_twi_cfg);
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    NULL_PARAM_CHECK(p_params->evt_handler);
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.mode               = p_params->mode;
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.evt_handler        = p_params->evt_handler;
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.cfg.twi_addr       = p_params->twi_addr;
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.cfg.pin_int        = p_params->pin_int;
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.cfg.p_twi_instance = p_params->p_twi_instance;
+Nordic-Thingy52-FW/source/drivers/drv_pressure.c:    m_drv_pressure.cfg.p_twi_cfg      = p_params->p_twi_cfg;
+Nordic-Thingy52-FW/source/drivers/drv_mpu9250.c:    m_mpu9250.init.p_twi_cfg      = p_params->p_twi_cfg;
+Nordic-Thingy52-FW/source/drivers/drv_mpu9250.c:    m_mpu9250.init.p_twi_instance = p_params->p_twi_instance;
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    NULL_PARAM_CHECK(p_params->p_twi_instance);
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    NULL_PARAM_CHECK(p_params->p_twi_cfg);
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    NULL_PARAM_CHECK(p_params->evt_handler);
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    m_drv_humidity.evt_handler        = p_params->evt_handler;
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    m_drv_humidity.cfg.twi_addr       = p_params->twi_addr;
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    m_drv_humidity.cfg.pin_int        = p_params->pin_int;
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    m_drv_humidity.cfg.p_twi_instance = p_params->p_twi_instance;
+Nordic-Thingy52-FW/source/drivers/drv_humidity.c:    m_drv_humidity.cfg.p_twi_config   = p_params->p_twi_cfg;
+Nordic-Thingy52-FW/source/drivers/drv_speaker.c:    NULL_PARAM_CHECK(p_params->evt_handler);
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    fds_record_chunk_t chunk           = {.p_data = p_params->p_chunk_buf};
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    fds_record_t       record_to_write = {.data.p_chunks = &chunk, .file_id = p_params->file_id};
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    err_code = fds_record_find_by_key(p_params->record_key, &desc, &ft);
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    if (p_params->access_type == ES_FLASH_ACCESS_READ)
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    if (p_params->access_type == ES_FLASH_ACCESS_CLEAR && err_code == FDS_ERR_NOT_FOUND)
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:    switch (p_params->access_type)
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            memcpy(p_params->p_data, record.p_data, p_params->size_bytes);
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            // Note chunk.p_data points to p_params->p_chunk_buf
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            memcpy(p_params->p_chunk_buf, p_params->p_data, p_params->size_bytes);
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            chunk.length_words = p_params->size_bytes / 4;
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            if (p_params->size_bytes % 4 != 0)
+Nordic-Thingy52-FW/external/sdk13/components/libraries/eddystone/es_flash.c:            record_to_write.key = p_params->record_key;
